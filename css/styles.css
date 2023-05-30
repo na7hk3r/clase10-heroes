@@ -1,30 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
     --black: #000000;
-    --blue: #00669F;
-    --gray: #F3F3F3;
-    --green: #1CD1B0;
-    --white: #FFF9F9;
+    --blue: #00669f;
+    --gray: #f3f3f3;
+    --green: #1cd1b0;
+    --white: #fff9f9;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
+
 
 /**     NAV-BAR       **/
 
 .nav1 {
     background-color: var(--green);
-    height: 38px;
-    width: 100%;
-    padding: 10px;
     font-size: 15px;
+    height: 38px;
     line-height: 17.58px;
+    padding: 10px;
+    width: 100%;
 }
 
 .nav2 {
@@ -40,100 +41,95 @@
 }
 
 .nav2 h1 {
-    font-size: 40px;
     color: var(--white);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2;
     cursor: pointer;
+    font-size: 40px;
+    letter-spacing: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
 /**     SECCION PRINCIPAL, CARDS       **/
 
-main{
+main {
     margin-bottom: 15%;
     margin-top: 5%;
 }
 
 .card-container {
     display: flex;
+    height: auto;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    width: 80%;
     padding: 50px;
+    width: 80%;
 }
 
 .card1,
 .card2,
 .card3 {
     background-color: var(--gray);
-    width: 300px;
-    height: 529px;
     border-radius: 10px 50px;
-    display: inline-block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
-    margin-right: 3%;
+    display: inline-block;
+    height: 529px;
     margin: 0 auto;
+    margin-right: 3%;
+    position: relative;
+    width: 300px;
 }
 
-
 .card1 {
-    background-image: url(../img/fondo_batman.png);
-    background-repeat: no-repeat;
+    background: no-repeat url(../img/fondo_batman.png);
 }
 
 .card2 {
-    background-image: url(../img/fondo_harley.png);
-    background-repeat: no-repeat;
+    background: no-repeat url(../img/fondo_harley.png);
 }
 
 .card3 {
-    background-image: url(../img/fondo_superman.png);
-    background-repeat: no-repeat;
+    background: no-repeat url(../img/fondo_superman.png);
 }
-
 
 .card1>img,
 .card2>img,
 .card3>img {
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
-    position: relative;
-    top: 25%;
+    height: 100px;
     left: 35%;
     margin-top: 10px;
+    position: relative;
+    top: 25%;
+    width: 100px;
 }
 
 i {
     color: rgba(255, 255, 255, 0.25);
     font-size: 30px;
+    left: 10px;
     position: absolute;
     top: 10px;
-    left: 10px;
 }
 
-i:hover{
+i:hover {
     color: rgb(255, 0, 0);
 }
 
 .personaje {
     font-size: 30px;
-    line-height: 35.16px;
-    text-align: center;
-    margin-top: 50%;
     font-weight: 500;
+    line-height: 35.16px;
+    margin-top: 50%;
+    text-align: center;
 }
 
 .info-pj {
-    position: relative;
+    font-size: 16px;
     margin-top: 0;
     padding: 20px;
+    position: relative;
     text-align: left;
-    font-size: 16px;
 }
 
 button {
@@ -142,27 +138,28 @@ button {
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: var(--white);
-    width: 128px;
-    height: 48px;
-    text-align: center;
-    font-size: 15px;
+    cursor: pointer;
     display: inline-block;
-    padding: 10px 15px;
+    font-size: 15px;
+    height: 48px;
     margin-top: 0;
     margin-left: 30%;
-    cursor: pointer;
+    padding: 10px 15px;
+    text-align: center;
+    width: 128px;
 }
+
 
 /**     FOOTER       **/
 
 footer {
     background-color: var(--blue);
-    color: #FFF9F9;
-    width: 100%;
+    bottom: 0;
+    color: #fff9f9;
+    display: flex;
     height: 50px;
+    justify-content: space-between;
     padding: 15px;
     position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
