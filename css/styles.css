@@ -16,21 +16,36 @@
     padding: 0;
 }
 
+/**     NAV-BAR       **/
+
 .nav1 {
     background-color: var(--green);
     height: 38px;
     width: 100%;
     padding: 10px;
+    font-size: 15px;
+    line-height: 17.58px;
 }
 
 .nav2 {
     background-color: var(--blue);
-    position: sticky;
-    top: 20;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
     height: 101px;
+    line-height: 36.88px;
+    padding: 30px 0 30px 10px;
+    position: sticky;
+    top: 0;
     width: 100%;
-    padding: 10px;
-    font-size: 40px;
+    z-index: 10;
+}
+
+/**     CARDS       **/
+
+.container-card{
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .card1,
@@ -41,22 +56,57 @@
     height: 529px;
     border-radius: 5%;
     display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin-right: 3%;
+}
+
+i{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .card1{
     background-image: url(../img/fondo_batman.png);
     background-repeat: no-repeat;
-    background-size: cover;
 }
 .card2{
     background-image: url(../img/fondo_harley.png);
     background-repeat: no-repeat;
-    background-size: cover;
 }
 .card3{
     background-image: url(../img/fondo_batman.png);
     background-repeat: no-repeat;
-    background-size: cover;
+}
+
+
+.card1>img,
+.card2>img,
+.card3>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 25%;
+    left: 35%;
+}
+
+.personaje{
+    font-size: 30px;
+    line-height: 35.16px;
+    text-align: center;
+    margin-top: 50%;
+}
+
+.info-pj{
+    position: relative;
+    top:5%;
+    padding:20px;
+    text-align: left;
+    font-size: 16px;
 }
 
 button{
@@ -66,14 +116,13 @@ button{
     height: 48px;
     text-align: center;
     font-size: 15px;
+    display: inline-block;
+    padding: 15px;
+    margin-top: 10%;
+    margin-left: 25%;
 }
 
-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-}
+/**     FOOTER       **/
 
 footer {
     background-color: var(--blue);
@@ -81,4 +130,6 @@ footer {
     width: 100%;
     height: 50px;
     padding: 15px;
+    position: fixed;
+    bottom: 0;
 }
