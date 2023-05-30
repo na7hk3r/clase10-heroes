@@ -47,7 +47,12 @@
 }
 
 
-/**     CARDS       **/
+/**     SECCION PRINCIPAL, CARDS       **/
+
+main{
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
 
 .card-container {
     display: flex;
@@ -151,4 +156,6 @@ footer {
     padding: 15px;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
