@@ -82,6 +82,13 @@ main {
     margin-right: 3%;
     position: relative;
     width: 300px;
+    transition: all .2s ease-in-out;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: scale(1.1);
 }
 
 .card1 {
