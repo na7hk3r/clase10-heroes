@@ -181,7 +181,7 @@ footer>img{
 /**     RESPONSIVE      **/
 
 /*      Tablet      */
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 950px) {
     .card-container{
         flex-wrap: wrap;
         justify-content: space-between;
@@ -190,6 +190,26 @@ footer>img{
     .card{
         margin-bottom: 2em;
     }
+
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:15em;
+        right:1em;
+        background-color:#0C9;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        box-shadow: 2px 2px 3px #999;
+    }
+    
+    .my-float{
+        position: center;
+        right: 5px;
+        top: 15px;
+    }
+
 }
 
 /*      Smartphone      */
@@ -204,5 +224,23 @@ footer>img{
     .card{
         margin: auto;
         margin-bottom: 2em;
+    }
+
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:15em;
+        right:1em;
+        background-color:#0C9;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        box-shadow: 2px 2px 3px #999;
+    }
+    
+    .my-float{
+        position: center;
+        top: 10px;
     }
 }
