@@ -21,7 +21,7 @@
 }
 
 
-/**     NAV-BAR       **/
+/**     HEADER, NAV-BAR        **/
 
 .nav1 {
     background-color: var(--green);
@@ -44,7 +44,7 @@
     z-index: 10;
 }
 
-.nav2 h1 {
+h1 {
     color: var(--white);
     cursor: pointer;
     font-size: 40px;
@@ -53,7 +53,7 @@
 }
 
 
-/**     SECCION PRINCIPAL, CARDS       **/
+/**     SECCION PRINCIPAL, CARDS        **/
 
 main {
     margin-bottom: 15%;
@@ -64,31 +64,37 @@ main {
     display: flex;
     height: auto;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     padding: 50px;
-    width: 80%;
+    width: 100%;
 }
 
-.card1,
-.card2,
-.card3 {
+.card{
     background-color: var(--gray);
     border-radius: 10px 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 529px;
     margin: 0 auto;
     margin-right: 3%;
     position: relative;
     width: 300px;
-    transition: all .2s ease-in-out;
+    transition: all .4s ease-in-out;
+    overflow: none;
 }
 
-.card1:hover,
-.card2:hover,
-.card3:hover {
+.card:hover {
     transform: scale(1.1);
+}
+
+.card>img{
+    border-radius: 50%;
+    height: 100px;
+    margin-top: 10px;
+    position: relative;
+    top: 25%;
+    width: 100px;
 }
 
 .card1 {
@@ -103,20 +109,12 @@ main {
     background: no-repeat url(../img/fondo_superman.png);
 }
 
-.card1>img,
-.card2>img,
-.card3>img {
-    border-radius: 50%;
-    height: 100px;
-    left: 35%;
-    margin-top: 10px;
-    position: relative;
-    top: 25%;
-    width: 100px;
+.card4 {
+    background: no-repeat url(../img/fondo_maravilla.png);
 }
 
 i {
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.50);
     font-size: 30px;
     left: 10px;
     position: absolute;
@@ -131,15 +129,15 @@ i:hover {
     font-size: 30px;
     font-weight: 500;
     line-height: 35.16px;
-    margin-top: 50%;
     text-align: center;
+    align-items:center;
+    justify-content: flex-end;
+    margin-top: 50%;
 }
 
 .info-pj {
-    font-size: 16px;
-    margin-top: 0;
-    padding: 20px;
-    position: relative;
+    font-size: 14px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -150,11 +148,9 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: var(--white);
     cursor: pointer;
-    display: inline-block;
     font-size: 15px;
     height: 48px;
     margin-top: 0;
-    margin-left: 30%;
     padding: 10px 15px;
     text-align: center;
     width: 128px;
@@ -164,13 +160,49 @@ button {
 /**     FOOTER       **/
 
 footer {
+    align-items: center;
     background-color: var(--blue);
     bottom: 0;
     color: #fff9f9;
     display: flex;
     height: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
     position: fixed;
     width: 100%;
+}
+
+footer>img{
+    justify-content: flex-end;
+    width: 6em;
+    height: auto;
+}
+
+/**     RESPONSIVE      **/
+
+/*      Tablet      */
+@media  screen and (max-width: 768px) {
+    .card-container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card{
+        margin-bottom: 2em;
+    }
+}
+
+/*      Smartphone      */
+@media  screen and (max-width: 460px) {
+    .card-container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .card{
+        margin: auto;
+        margin-bottom: 2em;
+    }
 }
