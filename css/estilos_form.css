@@ -1,0 +1,41 @@
+@import url(styles.css);
+
+.form-container{
+    align-items: center;
+    background-color: var(--blue);
+    border-radius: 50px;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+}
+
+form{
+    align-items: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+form > h2 {
+    font-weight: 700;
+}
+
+.inputs-form {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.form-1,
+.form-2{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: 400;
+}
