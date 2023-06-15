@@ -161,6 +161,25 @@ button {
     width: 128px;
 }
 
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:15em;
+    right:1em;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+    position: center;
+    right: 10px;
+    top: 15px;
+}
+
 
 /**     FOOTER       **/
 
