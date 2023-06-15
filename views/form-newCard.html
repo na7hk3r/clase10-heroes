@@ -25,6 +25,15 @@
         <img src="../img/logo_tienda.png" alt="Logo Tienda">
         <a href="../index.html"><h1>Tienda Héroes</h1></a>
     </nav>
+    <div class="nav-ext">
+        <p><a href="../index.html">Regresar</a></p>
+        <i class="fa fa-undo" aria-hidden="true"></i>
+        <ul>
+            <li>Contacto</li>
+            <li>Registrarme</li>
+            <li>Ingresar</li>
+        </ul>
+    </div>
 
     <main>
         <section class="form-container">
@@ -33,8 +42,8 @@
                 <p>Agregá tu personaje favirto completando las opciones.</p>
                 <div class="inputs-form">
                 <div class="form-1">
-                    <label for="">*Nombre</label>
-                    <input type="text" name="" id="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
 
                     <label for="">Fecha</label>
                     <input type="date" name="" id="">
@@ -42,8 +51,8 @@
                     <textarea name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
                 </div>
                 <div class="form-2">
-                    <label for="">*Especie</label>
-                    <select name="" id="" value="Especie">
+                    <label for="especies">Especie</label>
+                    <select name="especies" id="especies" value="Especie" required>
                         <option value="">Humano</option>
                         <option value="">Alienigena</option>
                     </select>
