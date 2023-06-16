@@ -45,6 +45,12 @@
     display: flex;
 }
 
+.nav2>img{
+    height: 80px;
+    bottom: 20px;
+    position: relative;
+}
+
 .nav-ext {
     background-color: var(--dark-blue);
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
@@ -101,9 +107,10 @@ a:visited{
 h1 {
     color: var(--white);
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
 }
 
 
