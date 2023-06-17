@@ -55,24 +55,27 @@
                 <div class="form-2">
                     <label for="especies">Especie</label>
                     <select name="especies" id="especies" value="Especie" required>
-                        <option value="">Humano</option>
-                        <option value="">Alienigena</option>
+                        <option value="humano">Humano</option>
+                        <option value="alien">Alienigena</option>
+                        <option value="mutante">Mutante</option>
+                        <option value="meta">Metamorfo</option>
+                        <option value="amazonas">Amazonas</option>
                     </select>
 
-                    <label for="">Agregar Foto</label>
-                    <input type="file" name="" id="">
+                    <label for="file">Agregar Foto</label>
+                    <input type="file" name="file" id="file">
 
                     <label for="">Poderes</label>
-                    <input type="checkbox" name="" id=""> Volar
-                    <input type="checkbox" name="" id=""> SuperInteligencia
-                    <input type="checkbox" name="" id=""> Vista de rayo láser
-                    <input type="checkbox" name="" id=""> Billetera gorda
+                    <label for="volar"><input type="checkbox" name="volar" id="volar"> Volar</label>
+                    <label for="inteligencia"><input type="checkbox" name="inteligencia" id="inteligencia"> SuperInteligencia</label>
+                    <label for="laser"><input type="checkbox" name="laser" id="laser"> Vista de rayo láser</label>
+                    <label for="money"><input type="checkbox" name="money" id="money"> Billetera gorda</label>
 
                     <hr>
 
                     <label for="">Tipo de personaje</label>
-                    <input type="radio" name="" id=""> Héroe / Heroína
-                    <input type="radio" name="" id=""> Villano / Villana
+                    <label for="heroe"><input type="radio" name="heroe" id="heroe"> Héroe / Heroína</label>
+                    <label for="villano"><input type="radio" name="heroe" id="villano"> Villano / Villana</label>
                 </div>
             </div>
                 <button type="submit" class="form-btn">Añadir</button>

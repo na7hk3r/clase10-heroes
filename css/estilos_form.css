@@ -78,6 +78,10 @@ textarea:focus{
     outline: none;
 }
 
+textarea{
+    resize: none;
+}
+
 hr{
     width: 100%;
     text-align: center;
